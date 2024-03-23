@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-primary: #5d51e3;
+  --color-primary: #5144de;
   --color-white: #fff;
   --color-red: rgb(255, 63, 63);
   --color-grey-100: hsl(220, 20%, 10%, 50%);
@@ -142,6 +142,7 @@ section {
 }
 
 /* ==================================================  navbar  ========================================== */
+
 nav {
   width: 100vw;
   height: 5rem;
