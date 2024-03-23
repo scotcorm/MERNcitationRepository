@@ -62,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-gray-900);
+  color: var(--color-grey-900);
   line-height: 1.1;
 }
 
@@ -118,6 +118,13 @@ section {
   color: var(--color-white);
 }
 
+.btn.errorpage {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.3rem 0.7rem;
+  margin: 2rem;
+}
+
 .btn.category {
   background: var(--color-bg);
   color: var(--color-primary);
@@ -137,7 +144,7 @@ section {
 }
 
 .btn:hover {
-  background: var(--color-gray-900);
+  background: var(--color-grey-900);
   color: var(--color-white);
 }
 
@@ -166,4 +173,80 @@ nav {
 .nav_logo {
   width: 3rem;
   display: block;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav_toggle-btn {
+  display: none;
+}
+
+/* ==================================================  footer  ========================================== */
+footer {
+  background: var(--color-grey-900);
+  margin-top: 6rem;
+  padding-top: 4rem;
+}
+
+.footer_categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer_categories a {
+  background: var(--color-grey-700);
+  color: var(--color-white);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-2);
+  transition: var(--transition);
+}
+
+.footer_categories a:hover {
+  background: var(--color-white);
+  color: var(--color-grey-900);
+}
+
+.footer_copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_copyright a {
+  align-items: center;
+  background: var(--color-grey-700);
+  color: var(--color-white);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-2);
+  transition: var(--transition);
+  margin-bottom: 2rem;
+}
+
+.footer_copyright a:hover {
+  background: var(--color-white);
+  color: var(--color-grey-900);
+}
+
+.btn:hover {
+  background: var(--color-grey-900);
+  color: var(--color-white);
+}
+
+.center {
+  text-align: center;
+  padding-top: 5rem;
+  margin-inline: auto;
+  display: block;
+  width: 100%;
+}
+
+.error-page {
+  margin-top: 3rem;
 }
