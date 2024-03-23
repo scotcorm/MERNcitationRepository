@@ -1,17 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout';
+import ErrorPage from './pages/ErrorPage';
+import Home from './pages/Home';
+import CitationDetail from './pages/CitationDetail';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import UserProfile from './pages/UserProfile';
+import Users from './pages/Users';
+import CreateCitation from './pages/CreateCitation';
+import EditCitation from './pages/EditCitation';
+import LicenseCitations from './pages/LicenseCitations';
+import Citations from './pages/Citations';
+import Dashboard from './pages/Dashboard';
+import Logout from './pages/Logout';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'citations/:id', element: <CitationDetail /> },
+      { path: 'register', element: <Register /> },
+      { path: 'login', element: <Login /> },
+      { path: 'profile/:id', element: <UserProfile /> },
+      { path: 'users', element: <Users /> },
+      { path: 'create', element: <CreateCitation /> },
+      { path: 'citations/licenses/:license', element: <LicenseCitations /> },
+      { path: 'citations/users/:id', element: <Citations /> },
+      { path: 'mycitations/:id', element: <Dashboard /> },
+      { path: 'citations/:id/edit', element: <EditCitation /> },
+      { path: 'logout', element: <Logout /> },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
