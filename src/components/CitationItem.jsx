@@ -38,10 +38,7 @@ const CitationItem = ({
 
         <div className='citation_footer'>
           <CitationAuthor />
-          <Link
-            to={`/citations/categories/${license}`}
-            className='btn category'
-          >
+          <Link to={`/citations/licenses/${license}`} className='btn category'>
             {license}
           </Link>
         </div>

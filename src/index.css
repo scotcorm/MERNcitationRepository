@@ -244,6 +244,7 @@ footer {
   text-align: center;
   padding-top: 5rem;
   margin-inline: auto;
+  /* margin-inline: center; */
   display: block;
   width: 100%;
 }
@@ -311,8 +312,36 @@ footer {
 
 .citation_author-details {
   margin-top: 2rem;
-  /* width: 2.5rem;
-  aspect-ratio: 1/1;
-  border-radius: var(--radius-2);
-  overflow: hidden; */
+}
+
+/* ==================================================  citation detail  ========================================== */
+
+.citation-detail {
+  width: var(--form-width);
+  background: var(--color-white);
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.citation-detail_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.citation-detail_buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.citation-detail_thumbnail {
+  margin: 1rem 0;
+  height: fit-content;
+  max-height: 30 rem;
+  overflow: hidden;
+}
+
+.citation-detail p {
+  margin-bottom: 0.7rem;
 }

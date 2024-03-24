@@ -4,7 +4,7 @@ import Avatar from '../images/employeeM.png';
 
 const CitationAuthor = () => {
   return (
-    <Link to={`/citations/users/sdfsdf`} className='citation_author'>
+    <Link to={`/citations/users/user1`} className='citation_author'>
       <div className='citation_author-avatar'>
         <img src={Avatar} alt='' />
       </div>
