@@ -1,7 +1,8 @@
 import React from 'react';
+import Citations from '../components/Citations';
 
 const Home = () => {
-  return <div>Home</div>;
+  return <Citations />;
 };
 
 export default Home;

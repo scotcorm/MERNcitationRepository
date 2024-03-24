@@ -6,6 +6,9 @@ const Footer = () => {
     <footer>
       <ul className='footer_categories'>
         <li>
+          <Link to='citations/categories/:CC0'>CC 0</Link>
+        </li>
+        <li>
           <Link to='citations/categories/:CCBY'>CC BY 4.0</Link>
         </li>
         <li>

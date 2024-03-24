@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../images/logo.png';
+import logo from '../images/logo.jpg';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -9,7 +9,7 @@ const Header = () => {
     <nav>
       <div className='container nav_container'>
         <Link to='/' className='nav_logo'>
-          <img src={Logo} alt='Navbar Logo' />
+          <img src={logo} alt='Navbar Logo' />
         </Link>
         <ul className='nav_menu'>
           <li>

@@ -122,7 +122,6 @@ section {
   background: var(--color-primary);
   color: var(--color-white);
   padding: 0.3rem 0.7rem;
-  margin: 2rem;
 }
 
 .btn.category {
@@ -130,6 +129,8 @@ section {
   color: var(--color-primary);
   font-size: 0.75rem;
   font-weight: 400;
+  padding: 0.5rem 0.7rem;
+  /* margin-top: 2.5rem; */
 }
 
 .btn.sm {
@@ -247,6 +248,71 @@ footer {
   width: 100%;
 }
 
-.error-page {
+.error-page h2 {
   margin-top: 3rem;
+}
+
+/* ==================================================  home  ========================================== */
+
+/* ==================================================  citations  ========================================== */
+.citations_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.citation {
+  background: var(--color-white);
+  padding: 1rem;
+  border-radius: var(--radius-4);
+  padding-bottom: 2rem;
+  transition: var(--transition);
+  cursor: default;
+}
+
+.citation:hover {
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.citation_thumbnail {
+  border-radius: var(--radius-3);
+  overflow: hidden;
+  height: 16rem;
+}
+
+.citation_content {
+  margin-top: 1.5rem;
+}
+
+.citation_content h3 {
+  margin: 1rem 0 0.6rem;
+}
+
+.citation_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
+.citation_author {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.citation_author-avatar {
+  margin-top: 2rem;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-2);
+  overflow: hidden;
+}
+
+.citation_author-details {
+  margin-top: 2rem;
+  /* width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-2);
+  overflow: hidden; */
 }
