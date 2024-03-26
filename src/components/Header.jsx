@@ -13,7 +13,7 @@ const Header = () => {
         </Link>
         <ul className='nav_menu'>
           <li>
-            <Link to='/profile'>Corm Grower</Link>
+            <Link to='/profile/user1'>Corm Grower</Link>
           </li>
           <li>
             <Link to='/create'>Create Citation</Link>

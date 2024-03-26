@@ -5,7 +5,7 @@ import CitationItem from '../components/CitationItem';
 const Citations = () => {
   const [citations, setCitations] = useState(DUMMY_CITATIONS);
   return (
-    <section classname='citations'>
+    <section className='citations'>
       {citations.length > 0 ? (
         <div className='container citations_container'>
           {citations.map(
