@@ -12,6 +12,7 @@ import UserProfile from './pages/UserProfile';
 import Users from './pages/Users';
 import CreateCitation from './pages/CreateCitation';
 import EditCitation from './pages/EditCitation';
+import DeleteCitation from './pages/DeleteCitation';
 import LicenseCitations from './pages/LicenseCitations';
 import Citations from './pages/Citations';
 import Dashboard from './pages/Dashboard';
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       { path: 'citations/users/:id', element: <Citations /> },
       { path: 'mycitations/:id', element: <Dashboard /> },
       { path: 'citations/:id/edit', element: <EditCitation /> },
+      { path: 'citations/:id/delete', element: <DeleteCitation /> },
       { path: 'logout', element: <Logout /> },
     ],
   },

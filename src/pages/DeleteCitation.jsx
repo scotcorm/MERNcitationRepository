@@ -1,7 +1,11 @@
 import React from 'react';
 
 const DeleteCitation = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Delete</h1>
+    </div>
+  );
 };
 
 export default DeleteCitation;
