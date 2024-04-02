@@ -15,8 +15,8 @@ const UserProfile = () => {
   return (
     <section className='profile'>
       <div className='container profile_container'>
-        <Link to={`/myposts/user1`} className='btn'>
-          My Posts
+        <Link to={`/mycitations/user1`} className='btn primary'>
+          My Citations
         </Link>
 
         <div className='profile_details'>

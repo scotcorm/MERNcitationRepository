@@ -40,7 +40,7 @@ const Dashboard = () => {
           })}
         </div>
       ) : (
-        <h2 className='center'>You do not have any posts yet.</h2>
+        <h2 className='center'>You do not have any citations yet.</h2>
       )}
     </section>
   );

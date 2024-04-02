@@ -10,15 +10,15 @@ const CitationDetails = () => {
         <div className='citation-detail_header'>
           <CitationAuthor />
           <div className='citation-detail_buttons'>
-            <Link to={`/posts/user1/edit`} className='btn sm primary'>
+            <Link to={`/citations/user1/edit`} className='btn sm primary'>
               Edit
             </Link>
-            <Link to={`/posts/user1/delete`} className='btn sm danger'>
+            <Link to={`/citations/user1/delete`} className='btn sm danger'>
               Delete
             </Link>
           </div>
         </div>
-        <h1>This is the post title!</h1>
+        <h1>This is the citation title!</h1>
         <div className='citation-detail_thumbnail'>
           <img src={Thumbnail} alt='' />
         </div>
